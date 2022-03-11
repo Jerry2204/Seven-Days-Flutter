@@ -8,8 +8,10 @@ class FirstStarted extends StatelessWidget {
       body: Stack(
         children: [
           Container(
+            width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               image: DecorationImage(
+                fit: BoxFit.fill,
                 image: AssetImage(
                   'assets/background_started.png',
                 ),
