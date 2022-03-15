@@ -10,8 +10,12 @@ class SecondSignin extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
-              'assets/paper_ilustration.png',
+            Center(
+              child: Image.asset(
+                'assets/paper_ilustration.png',
+                width: 245,
+                height: 279,
+              ),
             ),
             SizedBox(
               height: 50,
@@ -37,6 +41,7 @@ class SecondSignin extends StatelessWidget {
                   borderRadius: BorderRadius.circular(71),
                   borderSide: BorderSide.none,
                 ),
+                hintText: 'Email',
               ),
             ),
             SizedBox(
@@ -64,6 +69,7 @@ class SecondSignin extends StatelessWidget {
                   borderRadius: BorderRadius.circular(71),
                   borderSide: BorderSide.none,
                 ),
+                hintText: 'Password',
               ),
             ),
             SizedBox(
@@ -80,9 +86,40 @@ class SecondSignin extends StatelessWidget {
                   backgroundColor: Color(0xff5468FF),
                 ),
                 onPressed: () {},
-                child: Text('Sign In'),
+                child: Text(
+                  'Sign In',
+                  style: GoogleFonts.openSans(
+                    color: Color(
+                      0xffF8F8F8,
+                    ),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Container(
+              width: 320,
+              height: 55,
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(71),
+                  ),
+                ),
+                onPressed: () {},
+                child: Text(
+                  'Create New Account',
+                  style: GoogleFonts.openSans(
+                    color: Color(0xffCFCFCF),
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
