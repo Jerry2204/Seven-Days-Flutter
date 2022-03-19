@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sevendays/pages/first_empty.dart';
+import 'package:sevendays/pages/first_pricing.dart';
 import 'package:sevendays/pages/first_rate.dart';
 import 'package:sevendays/pages/first_signin.dart';
 import 'package:sevendays/pages/first_splash.dart';
@@ -17,7 +18,7 @@ class SevenDays extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SecondRate(),
+      home: FirstPricing(),
     );
   }
 }
