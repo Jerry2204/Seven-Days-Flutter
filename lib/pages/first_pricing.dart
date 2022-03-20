@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/src/material/bottom_navigation_bar.dart';
 
 class FirstPricing extends StatefulWidget {
   @override
