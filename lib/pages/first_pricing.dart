@@ -124,7 +124,9 @@ class _FirstPricingState extends State<FirstPricing> {
                             'assets/ic_check.png',
                             width: 26,
                           )
-                        : SizedBox()),
+                        : SizedBox(
+                            width: 26,
+                          )),
               ],
             ),
           ),
