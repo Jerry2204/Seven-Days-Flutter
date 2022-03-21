@@ -141,21 +141,50 @@ class _FirstPricingState extends State<FirstPricing> {
         children: [
           header(),
           SizedBox(
-            height: 50,
+            height: 30,
           ),
           option(0, 'assets/pig.png', 'Money Security', 'support', '24/7'),
           SizedBox(
-            height: 24,
+            height: 15,
           ),
           option(1, 'assets/paper_icon.png', 'Automation', 'we provide',
               'Invoice'),
           SizedBox(
-            height: 24,
+            height: 15,
           ),
           option(
               2, 'assets/coin_icon.png', 'Balance Report', 'can up to', '10 K'),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Color(0xff6050E7),
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Padding(
+                padding: const EdgeInsets.only(top: 21, left: 30),
+                child: Text(
+                  'Upgrade Now',
+                  style: GoogleFonts.poppins(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Padding(
+                padding: const EdgeInsets.only(top: 21, left: 60),
+                child: Image.asset(
+                  'assets/right_arrow.png',
+                  width: 24,
+                ),
+              ),
+              label: '',
+            ),
+          ]),
     );
   }
 }
