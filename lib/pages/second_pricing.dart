@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -174,6 +172,17 @@ class SecondPricing extends StatelessWidget {
                               ],
                             ),
                           ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        'Contact Support',
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontSize: 16,
+                          decoration: TextDecoration.underline,
                         ),
                       ),
                     ],
