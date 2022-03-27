@@ -150,7 +150,55 @@ class FirstTrade extends StatelessWidget {
                   ],
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: 327,
+              height: 60,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                    shadowColor: Color(0xffFFC532),
+                    elevation: 5,
+                    backgroundColor: Color(0xffFFC532),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(53),
+                    )),
+                onPressed: () {},
+                child: Text(
+                  'Checkout Now',
+                  style: GoogleFonts.poppins(
+                    color: Color(0xff191919),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              width: 327,
+              height: 60,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                    backgroundColor: Color(0xffD9D9D9),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(53),
+                    )),
+                onPressed: () {},
+                child: Text(
+                  'Save to Wishlist',
+                  style: GoogleFonts.poppins(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
