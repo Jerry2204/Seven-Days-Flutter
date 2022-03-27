@@ -12,6 +12,7 @@ import 'package:sevendays/pages/second_rate.dart';
 import 'package:sevendays/pages/second_signin.dart';
 import 'package:sevendays/pages/second_splash.dart';
 import 'package:sevendays/pages/second_started.dart';
+import 'package:sevendays/pages/second_trade.dart';
 
 void main() => runApp(SevenDays());
 
@@ -20,7 +21,7 @@ class SevenDays extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstTrade(),
+      home: SecondTrade(),
     );
   }
 }
