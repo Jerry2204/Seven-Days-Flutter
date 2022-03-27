@@ -45,6 +45,112 @@ class FirstTrade extends StatelessWidget {
               place: 'The Bar',
               price: '\$55.00',
             ),
+            SizedBox(
+              height: 26,
+            ),
+            Container(
+              width: 315,
+              height: 161,
+              decoration: BoxDecoration(
+                color: Color(0xffFFFFFF),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 16,
+                  left: 16,
+                  right: 16,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Informations',
+                      style: GoogleFonts.poppins(
+                        color: Color(0xff191919),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Sub Total',
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff191919),
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              'Delivery',
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff191919),
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              'Total',
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff191919),
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              '\$65.00',
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff191919),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              '\$1.00',
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff191919),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              '\$66.00',
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff191919),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
